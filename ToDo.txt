@@ -1,0 +1,4 @@
+ToDo
+
+1.) Animate input green border as user types
+2.) Create a minimilastic gulp build
