@@ -1,0 +1,69 @@
+html, body {
+    background: #f0f4f7;
+}
+
+.nameInput {
+    background: white;
+    padding: 20px;
+    padding-bottom: 40px;
+    width: 75%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #222324;
+    border-radius: 25px;
+}
+
+.nameInput-label {
+    color: #222324;
+    font-weight: bold;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.nameInput-Container {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.nameInput-input {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 3px solid #00a8e9;
+    box-sizing: border-box;
+}
+
+.nameInput-animatedBorderPosition {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.nameInput-animatedBorderMask {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nameInput-animatedBorder {
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid #76bd22;
+    border-top: 3px solid #76bd22;
+    border-bottom: 3px solid #76bd22;
+    box-sizing: border-box;
+}
+
+.nameInput-animatedBorder--complete {
+    border-right: 3px solid #76bd22;
+}
