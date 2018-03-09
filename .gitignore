@@ -4,5 +4,10 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 node_modules
-dist
+dist/js
+dist/styles
+dist/venter
+dist/*.html
+dist/*.js
+dist/*.css
 .gulp-cache
