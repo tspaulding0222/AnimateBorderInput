@@ -1,5 +1,0 @@
-ToDo
-
-1.) Create a minimilastic gulp build
-    Gulp Watch
-    Finish ES6 import stuff

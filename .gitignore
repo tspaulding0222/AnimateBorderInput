@@ -11,3 +11,4 @@ dist/*.html
 dist/*.js
 dist/*.css
 .gulp-cache
+.vscode/settings.json
