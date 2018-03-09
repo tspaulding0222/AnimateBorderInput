@@ -4,6 +4,7 @@ var babelify = require('babelify');
 var gulp  = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var bro = require('gulp-bro');
 var connect = require('gulp-connect');
@@ -29,9 +30,13 @@ gulp.task('js', function() {
 })
 
 gulp.task('scss', function() {
-    gulp.src('./source/scss/*.scss')
+    gulp.src('./source/scss/app.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 9'],
+      cascade: false
+    }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/styles'))
     .pipe(connect.reload());

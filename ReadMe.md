@@ -6,5 +6,11 @@
         * chrome://net-internals/#hsts
         * Delete Domain Security Policies for localhost
 
-## ToDo
-* 
+## Things I Have Done
+* Border that animates in around input as you type
+* Google Maps Address Auto-Complete
+* Various new loaders that could be used for Genesight
+
+## ToDo/Ideas
+* Loaders??
+* Gulp scss/css prefixes
