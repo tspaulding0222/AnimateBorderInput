@@ -12,6 +12,11 @@ function init() {
   init();
 
   window.setTimeout(function() {
-    MedicalNecessityTestForm.SlideInArrowFromRight();
+
+    // MedicalNecessityTestForm.SlideInArrowFromRight();
+    // MedicalNecessityTestForm.BounceInArrowRight();
+    MedicalNecessityTestForm.JelloAnim();
+    // MedicalNecessityTestForm.PulseAnim();
+
   }, 2000);
 })();
