@@ -59,6 +59,7 @@ gulp.task('watch', function() {
     gulp.watch('./source/scss/*.scss', ['scss']);
     gulp.watch('./source/js/*.js', ['js']);
     gulp.watch('./source/*.html', ['html']);
+    gulp.watch('./source/img/*', ['images']);
 });
 
 gulp.task('connect', function() {
