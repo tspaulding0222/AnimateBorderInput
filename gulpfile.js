@@ -8,6 +8,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var bro = require('gulp-bro');
 var connect = require('gulp-connect');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('js', function() {
     gulp
@@ -48,6 +49,12 @@ gulp.task('html', function() {
     .pipe(connect.reload());
 });
 
+gulp.task("images", function() {
+  gulp.src('./source/img/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('./dist/img'));
+});
+
 gulp.task('watch', function() {
     gulp.watch('./source/scss/*.scss', ['scss']);
     gulp.watch('./source/js/*.js', ['js']);
@@ -61,5 +68,7 @@ gulp.task('connect', function() {
     livereload: true
   });
 });
+
+
 
 gulp.task('default', ['connect', 'watch']);

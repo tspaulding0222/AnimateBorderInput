@@ -1,0 +1,41 @@
+.test-form {
+    width: 900px;
+    height: 275px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #fdf9f8;
+    box-sizing: border-box;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.test-form-question {
+    display: inline-block;
+    width: 510px;
+}
+
+.test-form-arrow {
+    display:inline-block;
+
+    img {
+        position: relative;
+        top: 30px;
+        left: -72px;
+    }
+
+    img.slide-in-right {
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

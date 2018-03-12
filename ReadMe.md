@@ -12,6 +12,4 @@
 * Various new loaders that could be used for Genesight
 
 ## ToDo/Ideas
-* Loaders??
-* Gulp scss/css prefixes
 * Modernizer - Check with old browsers for support

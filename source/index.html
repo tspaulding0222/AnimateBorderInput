@@ -17,6 +17,18 @@
 </head>
 
 <body>
+
+
+  <div class="test-form">
+    <div class="test-form-question">
+      <img src="./img/question.jpg">
+      <img src="./img/input.jpg">
+    </div>
+    <div class="test-form-arrow">
+      <img src="./img/yellow_arrow.png">
+    </div>
+  </div>
+
   <form>
     <div class="nameInput">
       <label class="nameInput-label">Animated Border Input:</label>
@@ -52,18 +64,19 @@
 
   <script>
     function initAutocomplete() {
-        autocomplete = new google.maps.places.Autocomplete(
-          (document.getElementById("autocomplete")),
-          { types: ["geocode"] }
-        );
-      }
+      autocomplete = new google.maps.places.Autocomplete(
+        (document.getElementById("autocomplete")),
+        { types: ["geocode"] }
+      );
+    }
       //https://developers.google.com/maps/premium/usage-limits#places-api-usage
       // Premium
       // 0.1 credit autocomplete entry
       // 2 credits search
   </script>
   <script src="./js/app.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAXzOFn3pWD31V05o1WdvRQz6G7xWtyiU&libraries=places&callback=initAutocomplete" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAXzOFn3pWD31V05o1WdvRQz6G7xWtyiU&libraries=places&callback=initAutocomplete"
+    async defer></script>
 </body>
 
 </html>
