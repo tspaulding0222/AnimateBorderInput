@@ -10,6 +10,7 @@ dist/venter
 dist/*.html
 dist/*.js
 dist/*.css
+dist/pages
 dist/img
 .gulp-cache
 .vscode/settings.json

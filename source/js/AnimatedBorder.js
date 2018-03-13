@@ -5,14 +5,16 @@ class AnimatedBorder {
         this.AnimatedBorderElement = document.querySelector(".nameInput-animatedBorderMask");
         this.NameInput = document.querySelector(".nameInput-input");
 
-        this.GreenBorder = document.querySelector(".nameInput-animatedBorder");
-        this.AnimatedBorderCompleteClass = "nameInput-animatedBorder--complete";
-
-        this.NameInputNumCharacters = 0;
-        this.CharacterMinLength = parseInt(this.NameInput.getAttribute("data-val-min-length"));
-
-        this.resetAnimatedBorder();
-        this.onInputType();
+        if(this.AnimatedBorderElement && this.NameInput) {
+            this.GreenBorder = document.querySelector(".nameInput-animatedBorder");
+            this.AnimatedBorderCompleteClass = "nameInput-animatedBorder--complete";
+    
+            this.NameInputNumCharacters = 0;
+            this.CharacterMinLength = parseInt(this.NameInput.getAttribute("data-val-min-length"));
+    
+            this.resetAnimatedBorder();
+            this.onInputType();
+        } 
     }
 
     resetAnimatedBorder() {
