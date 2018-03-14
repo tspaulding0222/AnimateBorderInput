@@ -45,14 +45,19 @@ class ArrowFollow {
 
     animateArrowTowardsInput() {
         const distDiff = this.getDistanceBetweenInputAndArrow();
+        const startAnimChangeDistance = 100;
 
         if (distDiff <= 0) {
             window.removeEventListener("scroll", this.animateFunction);
             return;
         }
 
-        if (distDiff <= 100) {
-            TweenMax.set(this.arrow, { y: window.pageYOffset, x: "+=10" });
+        if (distDiff <= startAnimChangeDistance) {
+            var animateRatio = 1 - (distDiff/startAnimChangeDistance);
+            var rotation = 90 * animateRatio;
+            console.log(rotation);
+
+            TweenMax.set(this.arrow, { y: window.pageYOffset, rotation: rotation }); //TODO Rotation needs work
         } else {
             TweenMax.set(this.arrow, { y: window.pageYOffset });
         }
