@@ -1,6 +1,5 @@
 import { AnimatedBorder } from "./AnimatedBorder";
 import { TestForm } from "./TestForm";
-import { ArrowFollow } from "./ArrowFollow";
 
 var MedicalNecessityTestForm;
 
