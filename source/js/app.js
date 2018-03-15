@@ -6,7 +6,6 @@ var MedicalNecessityTestForm;
 function init() {
   new AnimatedBorder();
   new TestForm();
-  new ArrowFollow();
 }
 
 (function() {
