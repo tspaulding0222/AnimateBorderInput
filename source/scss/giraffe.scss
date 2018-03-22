@@ -1,0 +1,159 @@
+.giraffe {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 720px;
+    width: 720px;
+}
+
+.giraffe .giraffe-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.giraffe .giraffe-left-ear {
+    position: absolute;
+    top: 73px;
+    left: 370px;
+}
+
+.giraffe .giraffe-right-ear {
+    position: absolute;
+    top: 111px;
+    left: 419px;
+}
+
+.giraffe .giraffe-left-eye {
+    position: absolute;
+    top: 263px;
+    left: 305px;
+}
+
+.giraffe .giraffe-right-eye {
+    position: absolute;
+    top: 290px;
+    left: 362px;
+}
+
+.giraffe .giraffe-left-nostril {
+    position: absolute;
+    top: 511px; 
+    left: 179px;
+}
+
+.giraffe .giraffe-right-nostril {
+    position: absolute;
+    top: 554px; 
+    left: 279px;
+}
+
+.giraffe .giraffe-left-antler {
+    position: absolute;
+    top: 106px;
+    left: 233px;
+    transform-origin: 75% 75%;
+}
+
+.giraffe .giraffe-right-antler {
+    position: absolute;
+    top: 219px;
+    left: 449px;
+    transform-origin: 0% 50%;
+}
+
+.giraffe .giraffe-outer-circle {
+    position: absolute;
+    top: 0;
+    left:0;
+    animation: rotateCircle 12s infinite alternate ease-in-out;
+}
+
+.giraffe .giraffe-ear {
+    animation: updown 2s infinite alternate;
+}
+
+.giraffe .giraffe-eye {
+    overflow: hidden;
+    transform-origin: 50% 50%;
+    animation: blink 1s infinite alternate ease-out;
+}
+
+.giraffe .giraffe-nostril {
+    animation: noseTwitch 3s infinite;
+}
+
+.giraffe .giraffe-antler {
+    transform: rotate(10deg);
+    animation: antlerWiggle 5s infinite;
+}
+
+@keyframes updown {
+    to {
+        transform: translateY(20px) translateX(-7px);
+    }
+}
+
+@keyframes blink {
+    from{
+        transform: scaleY(0) scaleX(.9);
+    }
+    to{
+        height: scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes noseTwitch {
+    0%, 100%, 90% {
+        transform: translateY(-20px);
+    }
+
+    20%, 30% {
+        transform: translate(5px, -10px)
+    }
+
+    60%, 70% {
+        transform: translate(-5px, 0px);
+    }
+}
+
+@keyframes antlerWiggle {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    16% {
+        transform: rotate(-10deg);
+    }
+
+    32% {
+        transform: rotate(10deg);
+    }
+
+    48% {
+        transform: rotate(-10deg);
+    }
+
+    64% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

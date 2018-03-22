@@ -56,9 +56,10 @@ gulp.task('pages', function(){
 });
 
 gulp.task("images", function() {
-  gulp.src('./source/img/*')
+  gulp.src('./source/img/**/*')
   .pipe(imagemin())
   .pipe(gulp.dest('./dist/img'));
+
 });
 
 gulp.task("build", ['scss', 'js', 'html', 'images', 'pages']);
